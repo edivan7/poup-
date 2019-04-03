@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let data of courses|async" id="{{data.id}}">
+    <img src="{{data.img_url}}">
+    <ion-card-content>
+      <ion-card-title>
+        {{data|json}}
+      </ion-card-title>
+      <p>
+        {{data.conteudo}}
+      </p>
+      <p>
+        <span class="tag">{{data.category_name}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab bottom right>
+      <button ion-fab (click)="goToQR()"><ion-icon name="qr-scanner"></ion-icon></button>
+</ion-fab> <ion-card *ngFor="let data of cards" id="{{data.id}}">
+    <img src="{{data.img_url}}">
+    <ion-card-content>
+      <ion-card-title>
+        {{data.titulo}}
+      </ion-card-title>
+      <p>
+        {{data.conteudo}}
+      </p>
+      <p>
+        <span class="tag">{{data.category_name}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

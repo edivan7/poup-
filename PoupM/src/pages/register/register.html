@@ -1,0 +1,32 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Registro</ion-title>
+      </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img class="poupemais" src="../assets/imgs/poupemais.jpeg">
+  <h1 class="custom-title">Bem vindo!</h1>
+  <ion-list inset>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div text-center>
+    <button ion-button (click)="register(user)">Register</button>
+</div>
+</ion-content>
