@@ -1,3 +1,5 @@
+import { LojaPage } from './../pages/loja/loja';
+import { DestaquePage } from './../pages/destaque/destaque';
 import { MylistPage } from './../pages/mylist/mylist';
 import { LoginPage } from './../pages/login/login';
 import { UsuarioPage } from './../pages/usuario/usuario';
@@ -16,6 +18,8 @@ import { FirebaseServiceProvider } from '../providers/firebase-service/firebase-
   declarations: [
     MyApp,
     LoginPage,
+    DestaquePage,
+    LojaPage,
     ListPage,
     UsuarioPage, 
    MylistPage
@@ -31,6 +35,8 @@ import { FirebaseServiceProvider } from '../providers/firebase-service/firebase-
   entryComponents: [
     MyApp,
     LoginPage,
+    DestaquePage,
+    LojaPage,
     ListPage,
     UsuarioPage,
    MylistPage

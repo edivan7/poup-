@@ -1,3 +1,5 @@
+import { DestaquePage } from './../pages/destaque/destaque';
+import { LojaPage } from './../pages/loja/loja';
 import { LoginPage } from './../pages/login/login';
 import { MylistPage } from './../pages/mylist/mylist';
 import { Component, ViewChild } from '@angular/core';
@@ -6,7 +8,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { UsuarioPage } from '../pages/usuario/usuario';
 
 @Component({
@@ -25,8 +26,8 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Destaque', component: ListPage },
-      { title: 'Lojas', component: ListPage },
+      { title: 'Destaque', component: DestaquePage },
+      { title: 'Lojas', component: LojaPage },
       { title: 'Minha Lista', component: MylistPage },
       { title: 'Usuario', component: UsuarioPage },
       { title: 'Sair', component: LoginPage }
